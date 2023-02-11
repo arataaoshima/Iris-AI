@@ -1,0 +1,1 @@
+web: gunicorn Pythonファイル名(拡張子なし):app --log-file=-
