@@ -1,15 +1,24 @@
-<title>Iris Predict App</title>
+<head>
+   <title>Iris Predict App</title>
+   <link rel="stylesheet" href="../static/style.css" type="text/css">
+</head>
 <style>
-#wrapper {
-   text-align: center;
-}
-</style>
-
-      <div id="wrapper">
-         {% for message in form.SepalLength.errors %}
-            <div>{{ message }}</div>
-         {% endfor %}
-
+   .wrapper {
+      text-align: center;
+      color:white;
+      background-size: cover;
+      height: 750px;
+   }
+   </style>
+   
+      <div class="wrapper" style="background-image: url('../static/assets/bg.jpg')">
+         <div class="black-filter">
+         <h1>アヤメの種類</h1>
+         <h4>以下の情報から、setosa, versicolor, virginicaのどれかを判別します</h4>
+       
+            {% for message in form.SepalLength.errors %}
+               <div>{{ message }}</div>
+            {% endfor %}                                                  
          {% for message in form.SepalWidth.errors %}
             <div>{{ message }}</div>
          {% endfor %}
@@ -21,20 +30,32 @@
          {% for message in form.PetalWidth.errors %}
             <div>{{ message }}</div>
          {% endfor %}
-
+         <div class="form-whole-wrapper">
          <form method="post">
+         <div class="form-wrapper">
             {{ form.SepalLength.label }}<br>
             {{ form.SepalLength }}
+         </div>
             <br>
+         <div class="form-wrapper">
             {{ form.SepalWidth.label }}<br>
             {{ form.SepalWidth }}
+         </div>
             <br>
+         <div class="form-wrapper">
             {{ form.PetalLength.label }}<br>
             {{ form.PetalLength }}
+         </div>
             <br>
+         <div class="form-wrapper">
             {{ form.PetalWidth.label }}<br>
             {{ form.PetalWidth }}
             <br>
+         </div>
+         <div class="form-wrapper">
             {{ form.submit }}
+         </div>
          </form>
+      </div>
+   </div>
       </div>

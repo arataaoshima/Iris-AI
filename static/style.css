@@ -1,0 +1,12 @@
+.form-wrapper{
+    margin-bottom:10px;
+}
+
+.form-whole-wrapper {
+    padding-bottom:30px;
+}
+
+.black-filter {
+    background-color: rgba(0,0,0,0.3);
+    height: 750px;
+}

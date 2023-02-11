@@ -1,8 +1,19 @@
 <!DOCTYPE html>
 <title>Iris Predict App</title>
+<style>
+  .wrapper2 {
+    padding-top:50px;
+     text-align: center;
+     background-size: cover;
+     height: 750px;
+  }
+  </style>
+  
+<div class="wrapper2">
 {% if irisName %}
   <h1>これは {{ irisName }} です</h1>
   <a href="./">トップへ戻る</a>
 {% else %}
   <a href="./">トップへ戻る</a>
 {% endif %}
+</div>

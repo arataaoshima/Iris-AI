@@ -32,11 +32,11 @@ app.config['SECRET_KEY'] = 'zJe09C5c3tMf5FnNL09C5d6SAzZoY'
 # http://wtforms.simplecodes.com/docs/0.6/fields.html
 # Flaskとwtformsを使い、index.html側で表示させるフォームを構築します。
 class IrisForm(Form):
-    SepalLength = FloatField("Sepal Length(cm)（蕚の長さ）",
+    SepalLength = FloatField("Sepal Length(cm)（ガクの長さ）",
                      [validators.InputRequired("この項目は入力必須です"),
                      validators.NumberRange(min=0, max=10)])
 
-    SepalWidth  = FloatField("Sepal Width(cm)（蕚の幅）",
+    SepalWidth  = FloatField("Sepal Width(cm)（ガクの幅）",
                      [validators.InputRequired("この項目は入力必須です"),
                      validators.NumberRange(min=0, max=10)])
 
