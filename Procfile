@@ -1,1 +1,1 @@
-web: gunicorn Pythonファイル名(拡張子なし):app --log-file=-
+web: gunicorn Python app:app --log-file=-
